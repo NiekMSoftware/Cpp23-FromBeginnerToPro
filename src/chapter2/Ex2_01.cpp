@@ -1,4 +1,5 @@
 // Ex2_01.cpp - Writing values of variables to the screen
+#include "pch.h"
 
 // This paragraph mainly focuses on integer values.
 void chapter2_1() {
