@@ -1,5 +1,5 @@
 // Ex1_01.cpp - A complete C++ program
-#include<print>
+#include "pch.h"
 
 void exercise1() {
 	std::println("Hello, World!");

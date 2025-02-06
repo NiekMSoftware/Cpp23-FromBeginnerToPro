@@ -10,7 +10,9 @@ include_directories(${CMAKE_SOURCE_DIR}/inc)
 # Chapter 1
 file(GLOB CHAPTER1_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/chapter1/*.cpp)
 add_executable(Chapter1 ${CHAPTER1_SOURCES})
+target_precompile_headers(Chapter1 PRIVATE ${CMAKE_SOURCE_DIR}/inc/pch.h)
 
 # Chapter 2
 file(GLOB CHAPTER2_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/chapter2/*.cpp)
 add_executable(Chapter2 ${CHAPTER2_SOURCES})
+target_precompile_headers(Chapter2 PRIVATE ${CMAKE_SOURCE_DIR}/inc/pch.h)
